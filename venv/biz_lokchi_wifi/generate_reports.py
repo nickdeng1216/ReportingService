@@ -56,9 +56,6 @@ def generate_reports(site, item_id, timestamp_from, timestamp_till, chart_name):
     gen_graph(df, year, month, writer, site + "_monthly_report", chart_name + "(Monthly)", "month")
     gen_graph(df, year, month, writer, site + "_weekly_report", chart_name + "(Weekly)", "week")
     gen_graph(df, year, month, writer, site + "_daily_report", chart_name + "(Daily)", "day")
-    # gen_monthly_graph(df, year, site, writer, chart_name + "(Monthly)")
-    # gen_weekly_graph(df, year, site, writer, chart_name + "(Weekly)")
-    # gen_daily_graph(df, year, month, site, writer, chart_name + "(Daily)")
 
 
 generate_reports("DWH", 54606, time_from, time_till, chart_title)
